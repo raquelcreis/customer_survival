@@ -47,7 +47,7 @@ For this dataset, we'll choose 90 days of inactivity to classify a customer as c
 
 ## Feature Engineering
 
-- First, the column events will be transformed categorical to numeric. 'contact' as 1, 'small_purchase' as 2 and 'big_purchase' as 3. 
+- First, the column events was transformed categorical to numeric. 'contact' as 1, 'small_purchase' as 2 and 'big_purchase' as 3. 
 
 - Created column 'eventNumber' to show the sequence of events per user.
 
@@ -61,13 +61,15 @@ For this dataset, we'll choose 90 days of inactivity to classify a customer as c
 
 ## Churn Classification
 
-Since there are many rows per user, we won't classify a user as churner but an event
+Since there are many rows per user, we won't classify a user as churner but as a churner event, instead. 
 
 ![Screen Shot 2022-04-05 at 11 21 15](https://user-images.githubusercontent.com/64446494/161775501-b8686019-f243-427a-8ad1-2e4250016d6a.png)
 
-If it is not the last event of the user,that means he did not churn in this date range (he returned to the platform, he was an active user).
-The last events are the ones that we are not sure if will be a churn event and this customer won't return.
-Therefore, all the events that are not the last will be classified as 0 (it is not a churn event). In constrast, the model will predict if the last event is a churn event or not.
+If it is not the last event of the user, that means he/she did not churn in this date range (he/she returned to the platform, he/she an active user). The last events are the ones that we are not sure if they will be a churn event and this customer won't return. Therefore, all the events that are not the last events, will be classified as 0 (it is not a churn event). In constrast, the model will predict if the last event is a churn event or not. 
+If a last event has a interval higher than the cut off date (90 days of inactivity), it will be classified as 1. If it is under 90 days, it will be classified as 'last'.
 
 
+![Screen Shot 2022-04-05 at 12 46 22](https://user-images.githubusercontent.com/64446494/161793607-3423cdf8-808c-4b1f-b606-ad159188a409.png)
+
+In this scenario, we have 103069 not churn events, 315 churn events and 719 events that we don't know how to classify yet. 
 
