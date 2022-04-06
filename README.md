@@ -73,3 +73,9 @@ If a last event has a interval higher than the cut off date (90 days of inactivi
 
 In this scenario, we have 103069 not churn events, 315 churn events and 719 events that we don't know how to classify yet. 
 
+
+## Undersampling & Oversampling
+
+The dataset was divided in train, validation and test sets. The test set will be the events that weren't classified (719). The rest of the dataset will be divided 30% for validation and 70% for train.
+
+Since the dataset is unbalanced, we'll have to undersample the majority class and oversample the minority. 
