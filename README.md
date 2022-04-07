@@ -1,4 +1,4 @@
-# Customer Survival - Churn Prediction
+# Implicit Churn Prediction
 
 ***
 
@@ -79,3 +79,15 @@ In this scenario, we have 103069 not churn events, 315 churn events and 719 even
 The dataset was divided in train, validation and test sets. The test set will be the events that weren't classified (719). The rest of the dataset will be divided 30% for validation and 70% for train.
 
 Since the dataset is unbalanced, we'll have to undersample the majority class and oversample the minority. 
+
+The sampling strategy chosen for undersampling was 1/50.
+
+![Screen Shot 2022-04-07 at 10 50 46](https://user-images.githubusercontent.com/64446494/162215022-a717f13e-1f75-4750-9f34-1da210efb5c4.png)
+
+The sampling strategy chosen for oversample was 1/1.
+
+![Screen Shot 2022-04-07 at 10 53 00](https://user-images.githubusercontent.com/64446494/162215317-a4bd0d28-728e-4ff7-ba4e-a1d76300cdef.png)
+
+## Model Validation
+
+
