@@ -2,7 +2,7 @@
 
 ***
 
-Churn rate is an essential metric to provide clarity on how well the business is retaining customers. An explicit customer churn represents the rate at which your customers are cancelling their subscriptions. On the other hand, an implicit churn is a common situation when it comes to retail selling. It's basically when the churner stops using the business or platform. In some cases, the customer don't even know they are churning.
+Churn rate is an essential metric to provide clarity on how well the business is retaining customers. An explicit customer churn represents the rate at which your customers are cancelling their subscriptions. On the other hand, an implicit churn is a common situation when it comes to retail selling. It's basically when the churner stops using the business or platform. In some cases, the customers don't even know they are churning.
 
 
 The purpose of this notebook is try to predict users who will churn by checking previous historical data. I hope this analysis help to increase the customer retention in your business! 🚀 
