@@ -27,7 +27,8 @@ As the date is stored as an object, it is necessary to change it to date-time fo
 
 The plot of events by month-year can be seen in the picture below:
 
-![output](https://user-images.githubusercontent.com/64446494/161657678-ec0b0a23-5292-430a-8d02-9f5e42482912.png)
+![Screen Shot 2022-04-07 at 11 18 44](https://user-images.githubusercontent.com/64446494/162220850-4c418e18-f422-48fb-9a41-d54796d8e12d.png)
+
 
 ***
 
@@ -89,5 +90,33 @@ The sampling strategy chosen for oversample was 1/1.
 ![Screen Shot 2022-04-07 at 10 53 00](https://user-images.githubusercontent.com/64446494/162215317-a4bd0d28-728e-4ff7-ba4e-a1d76300cdef.png)
 
 ## Model Validation
+
+For this notebook, 5 models were chosen for training and validation. 
+
+![Screen Shot 2022-04-07 at 11 02 32](https://user-images.githubusercontent.com/64446494/162217521-ba926d5f-85ed-47a7-8b5e-ba75fcb90af9.png)
+
+The model chosen will be the model with the best prediction score. 
+
+![Screen Shot 2022-04-07 at 11 05 38](https://user-images.githubusercontent.com/64446494/162218069-ad89f6a1-111d-4369-ae40-a00812042cf5.png)
+
+In this case, the best model is AdaBoost and in the picture below there is the confusion matrix using train and valid set:
+
+![Screen Shot 2022-04-07 at 11 19 32](https://user-images.githubusercontent.com/64446494/162220964-7351ce20-f408-4a04-9938-e717014b0389.png)
+
+## Results
+
+Even with the usage of undersampling and oversampling techniques, there is a high amount of false positive due to dataset imbalance. 
+
+Applying this model on test dataset, 111 in 719 users were classified as churner.
+
+## References
+
+- https://www.custify.com/blog/customer-churn-guide/
+- http://didawiki.cli.di.unipi.it/lib/exe/fetch.php/dm/1.crm_churn_2015.pdf
+- https://www.optimove.com/blog/how-to-perform-customer-survival-analysis#:~:text=Customer%20survival%20analysis%2C%20also%20known,customer%20acquisition%20and%20retention%20activities
+
+Thanks for reading this study! Please, feel free to contribute this code 🤓
+I intend to keep evolving a little bit every day! 🚀
+
 
 
