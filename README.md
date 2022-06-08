@@ -115,7 +115,7 @@ Applying this model on test dataset, 111 in 719 users were classified as churner
 - http://didawiki.cli.di.unipi.it/lib/exe/fetch.php/dm/1.crm_churn_2015.pdf
 - https://www.optimove.com/blog/how-to-perform-customer-survival-analysis#:~:text=Customer%20survival%20analysis%2C%20also%20known,customer%20acquisition%20and%20retention%20activities
 
-Thanks for reading this study! Please, feel free to contribute this code 🤓
+Hey!!Thanks for reading this study! Please, feel free to contribute this code 🤓
 I intend to keep evolving a little bit every day! 🚀
 
 
